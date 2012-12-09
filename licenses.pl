@@ -34,7 +34,8 @@ contaminate(gpl_license).
 staticlink_contaminate(lgpl_license).
 
 incompatible_licenses([lgpl_license, gpl_license],
-		      [openssl_license, apache1_license, bsd_3clauses_license]).
+		      [openssl_license, apache1_license, bsd_3clauses_license,
+                       cddl_license]).
 
 %% component facts
 
@@ -47,5 +48,9 @@ license(xbmc, gpl_license, _).
 license(prog1, proprietary_license, _).
 license(cpputest, bsd_license, _).
 license(bison, gpl_license, _).
+license(sqlite, public_domain, _).
+license(perl, artistic_license, _).
+license(python, python_license, _).
+license(cdrtools, cddl_license, _).
 
 %% licenses.pl ends here
